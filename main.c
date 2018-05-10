@@ -13,7 +13,7 @@ char encoded_message[250];
 char option[50];
 int encode, decode;
 
-//try GitHub
+
 printf(" Enter the desired option (encode or decode)");
 gets(option);
 printf("Your chosen option is %s", option);
