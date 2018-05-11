@@ -20,19 +20,59 @@ for(b = 2; b < length; b++){
     if (encoded_text[b] == ' '){
             encoded_text[b] = ' ';
     }
-    else{
+    if else{
 
-        for(a = 0; a < strlen(keyboard_c); a++){
-            if (encoded_text[b] == keyboard_c[a]){
-                if (a + displacement >= 26){
-                    encoded_text[b] = keyboard_c[a + displacement - 26];
+        for(a = 0; a < strlen(keyboard1_c); a++){
+            if (encoded_text[b] == keyboard1_c[a]){
+                if (a + displacement >= 10){
+                    encoded_text[b] = keyboard1_c[a + displacement - 10];
                     break;
                 }
                         else if (a + displacement < 0){
-                            encoded_text[b] = keyboard_c[a + displacement + 26];
+                            encoded_text[b] = keyboard1_c[a + displacement + 10];
                             break;
                         }
-                                else encoded_text[b] = keyboard_c[a + displacement];
+                                else encoded_text[b] = keyboard1_c[a + displacement];
+                                break;
+
+            }
+
+        }
+
+    }
+     if else{
+
+        for(a = 0; a < strlen(keyboard2_c); a++){
+            if (encoded_text[b] == keyboard2_c[a]){
+                if (a + displacement >= 9){
+                    encoded_text[b] = keyboard2_c[a + displacement - 9];
+                    break;
+                }
+                        else if (a + displacement < 0){
+                            encoded_text[b] = keyboard2_c[a + displacement + 9];
+                            break;
+                        }
+                                else encoded_text[b] = keyboard2_c[a + displacement];
+                                break;
+
+            }
+
+        }
+
+    }
+     else{
+
+        for(a = 0; a < strlen(keyboard3_c); a++){
+            if (encoded_text[b] == keyboard3_c[a]){
+                if (a + displacement >= 7){
+                    encoded_text[b] = keyboard3_c[a + displacement - 7];
+                    break;
+                }
+                        else if (a + displacement < 0){
+                            encoded_text[b] = keyboard3_c[a + displacement + 7];
+                            break;
+                        }
+                                else encoded_text[b] = keyboard3_c[a + displacement];
                                 break;
 
             }

@@ -8,7 +8,7 @@ int main()
 {
 char keyboard1[] = "qwertyuiop";
 char keyboard2[]= "asdfghjkl";
-char keyboard3[]= "zxcvbnm"
+char keyboard3[]= "zxcvbnm";
 char message[250];
 char decoded_message[250];
 char encoded_message[250];
