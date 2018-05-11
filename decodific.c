@@ -17,21 +17,45 @@ for(i = 0; i < length; i++){
     if (message_d[i] == ' '){
         decoded_text[i]=' ';
         }
-                else{
+                if else{
 
-                    for(j = 0; j < strlen(keyboard_d); j++){
-                        if (message_d[i] == keyboard_d[j]){
-                            if (j - displacement >= 26){
-                                decoded_text[i] = keyboard_d[j - displacement - 26];
+                    for(j = 0; j < strlen(keyboard1_d); j++){
+                        if (message_d[i] == keyboard1_d[j]){
+                            if (j - displacement >= 10){
+                                decoded_text[i] = keyboard1_d[j - displacement - 10];
                                 }
                                 else if (j - displacement < 0){
-                                        decoded_text[i] = keyboard_d[j - displacement + 26];
+                                        decoded_text[i] = keyboard1_d[j - displacement + 10];
                                         }
-                                    else decoded_text[i] = keyboard_d[j - displacement];
+                                    else decoded_text[i] = keyboard1_d[j - displacement];
                             }
 
                           }
                      }
+                     if else{
+                            for(j = 0; j < strlen(keyboard2_d); j++){
+                        if (message_d[i] == keyboard2_d[j]){
+                            if (j - displacement >= 9){
+                                decoded_text[i] = keyboard2_d[j - displacement - 9];
+                                }
+                                else if (j - displacement < 0){
+                                        decoded_text[i] = keyboard2_d[j - displacement + 9];
+                                        }
+                                    else decoded_text[i] = keyboard2_d[j - displacement];
+
+                     }
+      }
+      else{
+            for(j = 0; j < strlen(keyboard3_d); j++){
+                        if (message_d[i] == keyboard3_d[j]){
+                            if (j - displacement >= 7){
+                                decoded_text[i] = keyboard3_d[j - displacement - 7];
+                                }
+                                else if (j - displacement < 0){
+                                        decoded_text[i] = keyboard3_d[j - displacement + 7];
+                                        }
+                                    else decoded_text[i] = keyboard3_d[j - displacement];
+
       }
 
 
