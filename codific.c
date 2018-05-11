@@ -20,7 +20,6 @@ for(b = 2; b < length; b++){
     if (encoded_text[b] == ' '){
             encoded_text[b] = ' ';
     }
-    if else{
 
         for(a = 0; a < strlen(keyboard1_c); a++){
             if (encoded_text[b] == keyboard1_c[a]){
@@ -39,9 +38,6 @@ for(b = 2; b < length; b++){
 
         }
 
-    }
-     if else{
-
         for(a = 0; a < strlen(keyboard2_c); a++){
             if (encoded_text[b] == keyboard2_c[a]){
                 if (a + displacement >= 9){
@@ -58,9 +54,6 @@ for(b = 2; b < length; b++){
             }
 
         }
-
-    }
-     else{
 
         for(a = 0; a < strlen(keyboard3_c); a++){
             if (encoded_text[b] == keyboard3_c[a]){
@@ -80,6 +73,5 @@ for(b = 2; b < length; b++){
         }
 
     }
-}
 
 }

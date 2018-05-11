@@ -17,7 +17,6 @@ for(i = 0; i < length; i++){
     if (message_d[i] == ' '){
         decoded_text[i]=' ';
         }
-                if else{
 
                     for(j = 0; j < strlen(keyboard1_d); j++){
                         if (message_d[i] == keyboard1_d[j]){
@@ -31,8 +30,7 @@ for(i = 0; i < length; i++){
                             }
 
                           }
-                     }
-                     if else{
+
                             for(j = 0; j < strlen(keyboard2_d); j++){
                         if (message_d[i] == keyboard2_d[j]){
                             if (j - displacement >= 9){
@@ -45,7 +43,7 @@ for(i = 0; i < length; i++){
 
                      }
       }
-      else{
+
             for(j = 0; j < strlen(keyboard3_d); j++){
                         if (message_d[i] == keyboard3_d[j]){
                             if (j - displacement >= 7){
@@ -59,4 +57,6 @@ for(i = 0; i < length; i++){
       }
 
 
+}
+}
 }
