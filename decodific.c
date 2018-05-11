@@ -14,8 +14,8 @@ printf("\ndisplacement is: %d",displacement);
 
 length = strlen(message_d);
 for(i = 0; i < length; i++){
-    if (message_d[i] == ' '){
-        decoded_text[i]=' ';
+    if ((message_d[i]<65) || ((message_d[i]>90) && (message_d[i]<97))|| (message_d[i]>122) ){
+        decoded_text[i]= message_d[i];
         }
 
                     for(j = 0; j < strlen(keyboard1_d); j++){

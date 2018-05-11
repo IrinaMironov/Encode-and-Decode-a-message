@@ -17,9 +17,10 @@ strcpy(encoded_text,message_c);
 length = strlen(encoded_text);
 
 for(b = 2; b < length; b++){
-    if (encoded_text[b] == ' '){
-            encoded_text[b] = ' ';
+     if ((message_c[b]<65) || ((message_c[b]>90) && (message_c[b]<97))|| (message_c[b]>122) ){
+        encoded_text[b]= message_c[b];
     }
+
 
         for(a = 0; a < strlen(keyboard1_c); a++){
             if (encoded_text[b] == keyboard1_c[a]){
