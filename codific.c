@@ -17,9 +17,9 @@ strcpy(encoded_text,message_c);
 length = strlen(encoded_text);
 
 for(b = 2; b < length; b++){
-     if ((message_c[b]<65) || ((message_c[b]>90) && (message_c[b]<97))|| (message_c[b]>122) ){
-        encoded_text[b]= message_c[b];
-    }
+     if ((message_c[b] < 65) || ((message_c[b] > 90) && (message_c[b] < 97))|| (message_c[b] > 122) ){
+        encoded_text[b] = message_c[b];
+     }
 
 
         for(a = 0; a < strlen(keyboard1_c); a++){
@@ -32,8 +32,10 @@ for(b = 2; b < length; b++){
                             encoded_text[b] = keyboard1_c[a + displacement + 10];
                             break;
                         }
-                                else encoded_text[b] = keyboard1_c[a + displacement];
+                                else {
+                                        encoded_text[b] = keyboard1_c[a + displacement];
                                 break;
+                                }
 
             }
 
@@ -49,8 +51,11 @@ for(b = 2; b < length; b++){
                             encoded_text[b] = keyboard2_c[a + displacement + 9];
                             break;
                         }
-                                else encoded_text[b] = keyboard2_c[a + displacement];
+                                else  {
+                                    encoded_text[b] = keyboard2_c[a + displacement];
+
                                 break;
+                                }
 
             }
 
@@ -66,13 +71,15 @@ for(b = 2; b < length; b++){
                             encoded_text[b] = keyboard3_c[a + displacement + 7];
                             break;
                         }
-                                else encoded_text[b] = keyboard3_c[a + displacement];
-                                break;
+                                else {
+                                        encoded_text[b] = keyboard3_c[a + displacement];
+                                         break;
+                                }
 
             }
 
         }
 
-    }
+}
 
 }

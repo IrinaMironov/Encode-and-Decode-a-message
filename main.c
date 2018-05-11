@@ -26,8 +26,6 @@ decode=strcmp(option,"decode");
 if (encode==0){
     printf("\nEnter your message: ");
     gets(message);
-   // printf("\n%s",message);
-
     codificare(message,keyboard1,keyboard2, keyboard3,encoded_message);
     printf("\nThe encoded message:");
     puts(encoded_message);
@@ -36,7 +34,6 @@ if (encode==0){
 else if (decode==0){
     printf("\nEnter your message: ");
     gets(message);
-   // printf("\n%s",message);
     decodificare(message,keyboard1,keyboard2, keyboard3,decoded_message);
     printf("\nThe decoded message: ");
     puts(decoded_message);
