@@ -6,7 +6,9 @@
 
 int main()
 {
-char keyboard[] = "qwertyuiopasdfghjklzxcvbnm";
+char keyboard1[] = "qwertyuiop";
+char keyboard2[]= "asdfghjkl";
+char keyboard3[]= "zxcvbnm"
 char message[250];
 char decoded_message[250];
 char encoded_message[250];
@@ -26,7 +28,7 @@ if (encode==0){
     gets(message);
    // printf("\n%s",message);
 
-    codificare(message,keyboard,encoded_message);
+    codificare(message,keyboard1,keyboard2, keyboard3,encoded_message);
     printf("\nThe encoded message:");
     puts(encoded_message);
 
@@ -35,7 +37,7 @@ else if (decode==0){
     printf("\nEnter your message: ");
     gets(message);
    // printf("\n%s",message);
-    decodificare(message,keyboard,decoded_message);
+    decodificare(message,keyboard1,keyboard2, keyboard3,decoded_message);
     printf("\nThe decoded message: ");
     puts(decoded_message);
     }
