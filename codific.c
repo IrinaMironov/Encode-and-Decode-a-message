@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "code.h"
-   void codificare(char message_c[250], char keyboard1_c[],char keyboard2_c[],char keyboard3_c[], char encoded_text[250])
+   void codificare(char message_c[250], char keyboard1_c[], char keyboard2_c[], char keyboard3_c[], char encoded_text[250])
 {
     int displacement;
     int a;
@@ -12,7 +12,7 @@
 
 displacement = strchr(keyboard2_c,message_c[0]) - strchr(keyboard2_c,'a');
 printf("\nDisplacement is: %d\n",displacement);
-strcpy(encoded_text,message_c);
+strcpy(encoded_text, message_c);
 
 length = strlen(encoded_text);
 

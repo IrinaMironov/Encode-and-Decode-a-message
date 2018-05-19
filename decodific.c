@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "code.h"
-void decodificare(char message_d[250],char keyboard1_d[],char keyboard2_d[],char keyboard3_d[],char decoded_text[250])
+void decodificare(char message_d[250], char keyboard1_d[], char keyboard2_d[], char keyboard3_d[], char decoded_text[250])
 {
     int length;
     int i;
